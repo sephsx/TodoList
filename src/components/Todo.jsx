@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TrashIcon, PencilIcon } from '@heroicons/react/24/outline';
+import { TrashIcon, PencilIcon, CheckIcon } from '@heroicons/react/24/outline';
 
 function Todo({ todo, index, removeTodo, updateTodo }) {
     const [isEditing, setIsEditing] = useState(false);
@@ -36,7 +36,7 @@ function Todo({ todo, index, removeTodo, updateTodo }) {
                         onClick={handleUpdate}
                         className="mr-2 text-green-500 hover:text-green-700"
                     >
-                        Save
+                        <CheckIcon className="h-6 w-6" />
                     </button>
                 )}
 
